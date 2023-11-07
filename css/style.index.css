@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700&display=swap');
+
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --light: rgb(252, 245, 237);
+    --light-med: rgb(244, 191, 150);
+    --light-red: rgb(206, 90, 103);
+    --black: rgb(31, 23, 23);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+}
+
+.navigation-wrapper{
+    width: 100%;
+    padding: 1em 3em;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light);
+}
+
+.navigation-wrapper .brand span{
+   font-size: 2rem;
+}
+
+
+.navigation-wrapper ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 25em;
+}
+
+ .navigation-wrapper ul li a{
+   text-decoration: none;
+   color: var(--black);
+   font-weight: 500;
+ }
+
+ .navigation-wrapper .login-btn{
+    border: 0;
+    width: 8em;
+    background-color: var(--light-red);
+    color: white;
+    padding: .70em;
+    border-radius: 100px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+.main-container{
+    min-height: 88vh;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.4);
+    background: url('../images/1299225.jpg');
+    background-position: 90% 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.main-container .container{
+    position: absolute;
+    width: 100%;
+    min-height: 88vh;
+    background-color: rgba(252, 245, 237, 0.3);
+    background-image: linear-gradient(to bottom right, rgba(252, 245, 237, 0.3), rgba(252, 245, 237, 0.5));
+    top: 0;
+    padding: 1em 3em;
+}
+
+.main-container .container .info-container{
+    width: 50%;
+}
+
+.main-container .container .info-container h2{
+    font-size: 3.5rem;
+    margin-bottom: 0;
+    color: var(--light-red); 
+    letter-spacing: .05em;
+}
+
+.main-container .container .info-container h2 span{
+   color: #2E4374;
+}
+
+.main-container .container .info-container .subtitle{
+    font-size: 1rem;
+    color: var(--black);
+    line-height: 1.5;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 0;
+ }
+
+ .main-container .container .info-container  ul{
+    margin: 0;
+    padding: 0;
+ }
+
+ .main-container .container .info-container  ul li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: .50em;
+    width: 20em;
+    font-weight: 500;
+ }
+
+ .main-container .container .info-container  ul li img{
+    width: 1.5em;
+    margin-right: .80em;
+    
+ }
+
+ 
+
+
+
+/** media queries **/
